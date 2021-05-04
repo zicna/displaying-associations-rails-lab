@@ -3,6 +3,6 @@
 <ol>
     <%= @artists.each do |artist| %>
         <li><%= link_to artist.name, artist_path(artist) %></li>
-        <p><%= artist.song_count %></p>
+        <p><%= "#{artist.song_count} song" %></p>
         <% end %>
 </ol>
