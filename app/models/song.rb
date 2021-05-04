@@ -3,6 +3,7 @@ class Song < ActiveRecord::Base
 
   def artist_name
     Artist.find_by(id: self.artist_id)
+    binding.pry
     # self.artist.name
   end
 end
